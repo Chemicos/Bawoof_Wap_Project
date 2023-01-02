@@ -1,2 +1,1 @@
-# Tindog_WAP_Project
-Tindog app
+TinDog Starting Files
