@@ -1,0 +1,24 @@
+{
+  "name": "tindog_wap_project",
+  "version": "1.0.0",
+  "description": "TinDog Starting Files",
+  "main": "card.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chemicos/Tindog_WAP_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chemicos/Tindog_WAP_Project/issues"
+  },
+  "homepage": "https://github.com/Chemicos/Tindog_WAP_Project#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
