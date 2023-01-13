@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express')
 const http = require('http');
 const bcrypt = require('bcrypt');
 const path = require("path");
@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname,'./public')));
 
 
 app.get('/',(req,res) => {
-    res.sendFile(path.join(__dirname,'./public/index.html'));
+    res.sendFile(path.join(__dirname,'./index.html'));
 });
 
 
@@ -53,7 +53,8 @@ app.post('/login', async (req, res) => {
             const passwordMatch = await bcrypt.compare(submittedPass, storedPass);
             if (passwordMatch) {
                 let usrname = foundUser.username;
-                res.send(`<div align ='center'>
+                res.send(`
+                <div align ='center'>
                 <h2>login successful</h2>
                 </div>
 
@@ -85,6 +86,6 @@ app.post('/login', async (req, res) => {
 });
 
 
-// server.listen(3000, function(){
-//     console.log("server is listening on port: 3000");
-// });
+server.listen(5500, function(){
+    console.log("server is listening on port: 5500");
+});
